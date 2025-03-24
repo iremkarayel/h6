@@ -1,0 +1,24 @@
+import requests
+from bs4 import BeautifulSoup
+
+def get_milligazete_links(url):
+    r = requests.get(url)
+    soup = BeautifulSoup(r.content, 'html.parser')
+    items_list = soup.find_all(name="div", attrs={"class": "f-cat f-item"})
+    links = []  
+   
+    for item in items_list:
+        for b in item.find_all("ul", {"class": "list underline"}):
+            for link in b.find_all("a"):
+                my_link = link.get('href')
+               
+                new_link = "https://www.milligazete.com.tr{}".format(my_link)
+                links.append(new_link) 
+    
+    return links  
+
+url = 'https://www.milligazete.com.tr/arsiv/2025-03-22'
+links = get_milligazete_links(url)
+
+for link in links:
+    print(link)
