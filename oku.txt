@@ -1,0 +1,9 @@
+Bu hafta, Millî Gazete'nin haber arşiv sayfasından haber linklerini programatik olarak çekmek için Python ve BeautifulSoup kütüphanesi kullanıldı.
+
+Çalışma kapsamında:
+- Belirlenen arşiv sayfası URL'si (örneğin, 2025-03-22 tarihli sayfa) requests ile indirildi.
+- Sayfa içeriği BeautifulSoup ile parse edilerek, haber başlıklarının bulunduğu linkler seçildi.
+- Her haberin detay sayfasına ait linkler, sayfadaki ilgili <a> etiketlerinin href özniteliklerinden çıkarıldı.
+- Linkler tam URL formatına getirilip liste halinde toplandı ve çıktı olarak yazdırıldı.
+
+Bu işlem, haber arşivinden veri toplamaya yönelik ilk aşama olarak başarıyla tamamlandı.
