@@ -1,4 +1,4 @@
-LOG - Hafta 5
+LOG - Hafta 6
 
 Millî Gazete'nin arşiv sayfasından haber linkleri Python ve BeautifulSoup ile çekildi.
 - requests ile sayfa indirildi,
