@@ -1,0 +1,10 @@
+LOG - Hafta 5
+
+Millî Gazete'nin arşiv sayfasından haber linkleri Python ve BeautifulSoup ile çekildi.
+- requests ile sayfa indirildi,
+- BeautifulSoup ile haber linkleri parse edildi,
+- Linkler tam URL olarak listelendi ve çıktılandı.
+
+Veri toplama sürecinin ilk aşaması tamamlandı.
+
+
